@@ -1,0 +1,287 @@
+/*GENERAL*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: crimson;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+  }
+  
+  
+  /* NAV BAR*/
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    padding: 30px 0px 0px; 
+    font-size: 16px;
+  }
+  
+  .main-nav ul {
+    display: flex;
+  }
+  
+  .main-nav ul li {
+    padding: 0 10px;
+  }
+  
+  .main-nav .main-menu li{
+    padding-left: 8px;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  .main-nav .right-menu li{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  
+  /*WEBPAGE BOTTOM LINKS*/
+  .links {
+    background-color: black;
+    padding: 15px 0;
+  }
+    
+  .links .links-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 5px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+  }
+    
+  .links li {
+    line-height: 2.8;
+  }
+  
+  .links h3{
+    font-weight: 800;
+    font-size: 18px;
+    color:#fff;
+  }
+  
+  .links a {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .links a:hover {
+    color: crimson;
+  }
+
+  
+  /*FOOTER*/
+  .footer {
+    background: black;
+    padding-bottom: 20px
+  }
+    
+  .footer .footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+  }
+          
+  .footer .footer-inner li {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .footer .footer-inner li a{
+    color: crimson;
+    font-size: 12px;
+  }
+
+  /*INDEX/HOME*/
+.showcase-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .showcase-content .item1 {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: 90px 12.5px 95px;
+  }
+    
+  .showcase-content .item1 img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .showcase-content .item1 .action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  
+  .showcase-content .item1 .action a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+  }
+    
+  .showcase-content .item1:hover .action {
+    opacity: 1;
+  }
+  
+  .showcase-content .item1 a:hover {
+    color: crimson;
+  }
+  
+  .intro {
+    margin: 0px 0 60px;
+  }
+  
+  .intro .intro-text{
+    text-align: center;
+    padding: 0 265px;
+  }
+  
+  .intro .intro-text h2{
+  padding: 20px 0;
+  font-size: 38px;
+  font-weight: 700;
+  }
+  
+  .intro .intro-text h3{
+    padding-bottom:20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  /*CURRENT & PAST*/
+
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+    
+  .portfolio .item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+  }
+    
+  .portfolio .item img {
+    width: 100%;
+    height: 100%;
+  }
+    
+  .portfolio .item .action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+  }
+    
+  .portfolio .item:hover .action {
+    opacity: 1;
+  }
+    
+  .portfolio .item .action a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .portfolio .item a:hover {
+    color: crimson;
+  }
+
+  /*Testimonial*/
+.testimonials {
+    color:black;
+    background:grey;
+    max-width: auto;
+    margin: auto;
+    padding: 0 20px 0 20px;
+  }
+.testimonials h1{
+    text-align: center;
+}
+  .testimonials h5 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    line-height: 2;
+    padding: 40px 0px 40px;
+    text-align: center;
+    margin: 40px 285px 0px;
+  }
+  
+  .testimonials a {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .testimonials a:hover {
+    color: crimson;
+  }
+
